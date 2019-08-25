@@ -21,5 +21,57 @@ namespace Hola_mundo
         {
             MessageBox.Show("Hola" + txtnombre.Text); 
         }
+
+        private void btnsumar_Click(object sender, EventArgs e)
+        {
+            string valor1 = txtnumero1.Text;
+            string valor2 = txtnumero2.Text;
+
+            int numero1 = int.Parse(valor1);
+            int numero2 = int.Parse(valor2);
+
+            int total = numero1 + numero2;
+
+            lbltotal.Text = total.ToString();
+        }
+
+        private void btnrestar_Click(object sender, EventArgs e)
+        {
+            string valor1 = txtnumero1.Text;
+            string valor2 = txtnumero2.Text;
+
+            int numero1 = int.Parse(valor1);
+            int numero2 = int.Parse(valor2);
+
+            int total = numero1 - numero2;
+
+            lbltotal.Text = total.ToString();
+        }
+
+        private void btnmultiplicar_Click(object sender, EventArgs e)
+        {
+            string valor1 = txtnumero1.Text;
+            string valor2 = txtnumero2.Text;
+
+            int numero1 = int.Parse(valor1);
+            int numero2 = int.Parse(valor2);
+
+            int total = numero1 * numero2;
+
+            lbltotal.Text = total.ToString();
+        }
+
+        private void btndividir_Click(object sender, EventArgs e)
+        {
+            string valor1 = txtnumero1.Text;
+            string valor2 = txtnumero2.Text;
+
+            int numero1 = int.Parse(valor1);
+            int numero2 = int.Parse(valor2);
+
+            int total = numero1 / numero2;
+
+            lbltotal.Text = total.ToString();
+        }
     }
 }
